@@ -24,11 +24,11 @@ const Drawing = () => {
   }, [base, bleed, width, maxY, middleY, ratio])
 
   const svgCSS = {
-    maxHeight: `calc(100vh - ${bleed}px)`
+    height: `calc(100vh - ${bleed}px)`
   }
 
   return (
-    <svg viewBox={`0 0 ${width} ${height}`} style={svgCSS} width="100%" xmlns="https://www.w3.org/2000/svg">
+    <svg viewBox={`0 0 ${width} ${height}`} style={svgCSS} xmlns="https://www.w3.org/2000/svg">
       <rect
         id="background"
         height="100%"
