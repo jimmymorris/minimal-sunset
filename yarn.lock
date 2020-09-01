@@ -2895,6 +2895,11 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
+chromotome@^1.17.6:
+  version "1.17.6"
+  resolved "https://registry.yarnpkg.com/chromotome/-/chromotome-1.17.6.tgz#d09be13b4a4c950976eec7111b454ef09e8160ac"
+  integrity sha512-mqXH26mrY86ozWVfjwjKjL6xdka4S5ywCkx+TEE5L8jR7OHYMWGmsk9LLdFYXFHJjqn/Jg7hnuInrsniXRgYKw==
+
 ci-info@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"

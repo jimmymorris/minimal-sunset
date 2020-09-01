@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Drawing from './components/Drawing';
+import Controls from './components/Controls';
+import { SettingsContextProvider } from "./reducer";
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SettingsContextProvider>
+      <div style={{ display: 'flex', height: '100%'}}>
+        <div style={{ padding: '32px', flex: '75%' }}>
+          <Drawing />
+        </div>
+        <div style={{ padding: '32px', flex: '25%', background: '#eee' }}>
+          <Controls />
+        </div>
+      </div>
+    </SettingsContextProvider>
   );
 }
 
